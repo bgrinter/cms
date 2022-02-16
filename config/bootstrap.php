@@ -158,6 +158,13 @@ if ($fullBaseUrl) {
 }
 unset($fullBaseUrl);
 
+/*
+ * Pass the new table configuration to Users Plugin Configuration
+ */
+//Configure::write('Users.config', ['users']);
+//Plugin::load('CakeDC/Users', ['routes' => true, 'bootstrap' => true]);
+
+
 Cache::setConfig(Configure::consume('Cache'));
 ConnectionManager::setConfig(Configure::consume('Datasources'));
 TransportFactory::setConfig(Configure::consume('EmailTransport'));
