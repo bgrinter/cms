@@ -1,5 +1,10 @@
 <!-- File: templates/Articles/index.php  (delete links added) -->
 
+<div>
+    <?php echo $this->element('menu'); ?>
+</div>
+
+
 <h1>Articles</h1>
 <p><?= $this->Html->link("Add Article", ['action' => 'add']) ?></p>
 <table>
